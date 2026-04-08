@@ -1,0 +1,198 @@
+[{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f7d"
+  },
+  "name": "Photography",
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "posts": [],
+  "isPrivate": false,
+  "description": "My photos 📸",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f7e"
+  },
+  "name": "Fitness Goals",
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f70"
+  },
+  "posts": [],
+  "isPrivate": true,
+  "description": "",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f7f"
+  },
+  "name": "Art Gallery",
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f71"
+  },
+  "posts": [],
+  "isPrivate": false,
+  "description": "Digital art 🎨",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f80"
+  },
+  "name": "Tech Notes",
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "posts": [],
+  "isPrivate": false,
+  "description": "Coding projects",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f81"
+  },
+  "name": "Community",
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f73"
+  },
+  "posts": [],
+  "isPrivate": false,
+  "description": "Platform updates",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.755Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca7abd6df7ab30edacbd56"
+  },
+  "name": "hi",
+  "user": {
+    "$oid": "69ca7a176df7ab30edacbd09"
+  },
+  "posts": [
+    {
+      "$oid": "69ca79426a122c0d9b602f77"
+    }
+  ],
+  "isPrivate": true,
+  "description": "sdfghjkl",
+  "createdAt": {
+    "$date": "2026-03-30T13:29:33.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:29:46.295Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69ca7bc26df7ab30edacbdbe"
+  },
+  "name": "fghjk",
+  "user": {
+    "$oid": "69ca7a176df7ab30edacbd09"
+  },
+  "posts": [],
+  "isPrivate": false,
+  "description": "ghjkl;",
+  "createdAt": {
+    "$date": "2026-03-30T13:33:54.239Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:37:15.084Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69d48116d2ca2f5c873b2111"
+  },
+  "name": "hi",
+  "user": {
+    "$oid": "69d480d8d2ca2f5c873b20b2"
+  },
+  "posts": [],
+  "isPrivate": false,
+  "description": "asdfgjkl",
+  "createdAt": {
+    "$date": "2026-04-07T03:59:18.397Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T03:59:38.465Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69d51c9bbb9e408363fac69e"
+  },
+  "name": "hi",
+  "user": {
+    "$oid": "69d51aedbb9e408363fac5c4"
+  },
+  "posts": [],
+  "isPrivate": false,
+  "description": "",
+  "createdAt": {
+    "$date": "2026-04-07T15:02:51.366Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T17:02:29.482Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69d60e60b51ca6f9f3a010c5"
+  },
+  "name": "Design",
+  "user": {
+    "$oid": "69d6090bf07b9f58d9f5a420"
+  },
+  "posts": [
+    {
+      "$oid": "69d60a81b51ca6f9f3a01059"
+    }
+  ],
+  "isPrivate": false,
+  "description": "Cloths",
+  "createdAt": {
+    "$date": "2026-04-08T08:14:24.411Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T08:25:19.882Z"
+  },
+  "__v": 1
+}]

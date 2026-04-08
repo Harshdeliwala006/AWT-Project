@@ -1,0 +1,273 @@
+[{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f8f"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f70"
+  },
+  "type": "like",
+  "text": "Mike liked your post",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f90"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f70"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f71"
+  },
+  "type": "comment",
+  "text": "Emma commented",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f91"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f71"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "type": "like",
+  "text": "David liked your art",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f92"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f73"
+  },
+  "type": "follow",
+  "text": "Admin followed you",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f93"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f73"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "type": "like",
+  "text": "Sarah liked welcome post",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.768Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79b56df7ab30edacbcf3"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f73"
+  },
+  "sender": {
+    "$oid": "69ca79a46df7ab30edacbcdd"
+  },
+  "type": "comment",
+  "reel": {
+    "$oid": "69ca79426a122c0d9b602f87"
+  },
+  "text": "commented on your reel: \"hi...\"",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-03-30T13:25:09.161Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:25:09.161Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ca79b86df7ab30edacbcfe"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f73"
+  },
+  "sender": {
+    "$oid": "69ca79a46df7ab30edacbcdd"
+  },
+  "type": "comment",
+  "reel": {
+    "$oid": "69ca79426a122c0d9b602f87"
+  },
+  "text": "commented on your reel: \"helo...\"",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-03-30T13:25:12.476Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:25:12.476Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d480fdd2ca2f5c873b20dc"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "sender": {
+    "$oid": "69d480d8d2ca2f5c873b20b2"
+  },
+  "type": "like",
+  "post": {
+    "$oid": "69ca79426a122c0d9b602f7a"
+  },
+  "text": "liked your post",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-04-07T03:58:53.920Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T03:58:53.920Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d48100d2ca2f5c873b20e4"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "sender": {
+    "$oid": "69d480d8d2ca2f5c873b20b2"
+  },
+  "type": "like",
+  "post": {
+    "$oid": "69ca79426a122c0d9b602f7a"
+  },
+  "text": "liked your post",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-04-07T03:58:56.257Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T03:58:56.257Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d48100d2ca2f5c873b20ec"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "sender": {
+    "$oid": "69d480d8d2ca2f5c873b20b2"
+  },
+  "type": "like",
+  "post": {
+    "$oid": "69ca79426a122c0d9b602f7a"
+  },
+  "text": "liked your post",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-04-07T03:58:56.775Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T03:58:56.775Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d48101d2ca2f5c873b20f4"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "sender": {
+    "$oid": "69d480d8d2ca2f5c873b20b2"
+  },
+  "type": "like",
+  "post": {
+    "$oid": "69ca79426a122c0d9b602f7a"
+  },
+  "text": "liked your post",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-04-07T03:58:57.247Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T03:58:57.247Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d48101d2ca2f5c873b20fc"
+  },
+  "recipient": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "sender": {
+    "$oid": "69d480d8d2ca2f5c873b20b2"
+  },
+  "type": "like",
+  "post": {
+    "$oid": "69ca79426a122c0d9b602f7a"
+  },
+  "text": "liked your post",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-04-07T03:58:57.652Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T03:58:57.652Z"
+  },
+  "__v": 0
+}]

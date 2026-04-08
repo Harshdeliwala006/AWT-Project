@@ -1,0 +1,175 @@
+[{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f83"
+  },
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f70"
+  },
+  "title": "Abs workout",
+  "video": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
+  "thumbnail": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=320",
+  "caption": "5 min workout",
+  "likes": [
+    {
+      "$oid": "69ca79426a122c0d9b602f6f"
+    }
+  ],
+  "views": 150,
+  "isDeleted": false,
+  "comments": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.760Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.760Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f84"
+  },
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "title": "Drone footage",
+  "video": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
+  "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=320",
+  "caption": "Aerial views",
+  "likes": [
+    {
+      "$oid": "69ca79426a122c0d9b602f71"
+    }
+  ],
+  "views": 89,
+  "isDeleted": false,
+  "comments": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.760Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.760Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f85"
+  },
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f71"
+  },
+  "title": "Art timelapse",
+  "video": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4",
+  "thumbnail": "https://images.unsplash.com/photo-1549488230-123d827e9899?w=320",
+  "caption": "Drawing process",
+  "likes": [
+    {
+      "$oid": "69ca79426a122c0d9b602f72"
+    }
+  ],
+  "views": 203,
+  "isDeleted": false,
+  "comments": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.760Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.760Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f86"
+  },
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "title": "Code walkthrough",
+  "video": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
+  "thumbnail": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=320",
+  "caption": "React tutorial",
+  "likes": [],
+  "views": 67,
+  "isDeleted": false,
+  "comments": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.760Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.760Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f87"
+  },
+  "user": {
+    "$oid": "69ca79426a122c0d9b602f73"
+  },
+  "title": "App tour",
+  "video": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
+  "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=320",
+  "caption": "Welcome video",
+  "likes": [],
+  "views": 500,
+  "isDeleted": false,
+  "comments": [
+    {
+      "user": {
+        "$oid": "69ca79a46df7ab30edacbcdd"
+      },
+      "text": "hi",
+      "_id": {
+        "$oid": "69ca79b56df7ab30edacbcf1"
+      },
+      "createdAt": {
+        "$date": "2026-03-30T13:25:09.138Z"
+      }
+    },
+    {
+      "user": {
+        "$oid": "69ca79a46df7ab30edacbcdd"
+      },
+      "text": "helo",
+      "_id": {
+        "$oid": "69ca79b86df7ab30edacbcfc"
+      },
+      "createdAt": {
+        "$date": "2026-03-30T13:25:12.468Z"
+      }
+    }
+  ],
+  "__v": 2,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.760Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:25:12.469Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d53923bb9e408363fac951"
+  },
+  "user": {
+    "$oid": "69d51aedbb9e408363fac5c4"
+  },
+  "title": "fghjkl;",
+  "video": "data:video/mp4;base64,",
+  "thumbnail": "",
+  "caption": "",
+  "likes": [],
+  "views": 0,
+  "isDeleted": false,
+  "comments": [],
+  "createdAt": {
+    "$date": "2026-04-07T17:04:35.855Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T17:04:35.855Z"
+  },
+  "__v": 0
+}]

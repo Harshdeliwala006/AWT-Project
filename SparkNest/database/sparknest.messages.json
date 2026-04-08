@@ -1,0 +1,309 @@
+[{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f89"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f70"
+  },
+  "text": "Great workout reel!",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.763Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.763Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f8a"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f70"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "text": "Thanks! Try it out 💪",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.764Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.764Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f8b"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f71"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "text": "Love your code posts!",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.764Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.764Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f8c"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f71"
+  },
+  "text": "Your art is amazing 🎨",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.764Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.764Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f8d"
+  },
+  "sender": {
+    "$oid": "69ca79426a122c0d9b602f73"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "text": "Welcome to the platform!",
+  "isRead": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.764Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.764Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca917f81883357e3dcd3e6"
+  },
+  "sender": {
+    "$oid": "69ca7a176df7ab30edacbd09"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "text": "hii",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-03-30T15:06:39.696Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T15:06:39.696Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ca918881883357e3dcd3f7"
+  },
+  "sender": {
+    "$oid": "69ca7a176df7ab30edacbd09"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "text": "hrlllp",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-03-30T15:06:48.019Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T15:06:48.019Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ca918c81883357e3dcd400"
+  },
+  "sender": {
+    "$oid": "69ca7a176df7ab30edacbd09"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "text": "wnjndj",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-03-30T15:06:52.075Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T15:06:52.075Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ca919081883357e3dcd409"
+  },
+  "sender": {
+    "$oid": "69ca7a176df7ab30edacbd09"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "text": "jdjjdjd",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-03-30T15:06:56.060Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T15:06:56.060Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4813fd2ca2f5c873b2154"
+  },
+  "sender": {
+    "$oid": "69d480d8d2ca2f5c873b20b2"
+  },
+  "receiver": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "text": "hi",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-04-07T03:59:59.670Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T03:59:59.670Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d538e4bb9e408363fac927"
+  },
+  "sender": {
+    "$oid": "69d51aedbb9e408363fac5c4"
+  },
+  "receiver": {
+    "$oid": "69ca79a46df7ab30edacbcdd"
+  },
+  "text": "hi",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-04-07T17:03:32.192Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T17:03:32.192Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d53a6abb9e408363faca5c"
+  },
+  "sender": {
+    "$oid": "69d51aedbb9e408363fac5c4"
+  },
+  "receiver": {
+    "$oid": "69ca79a46df7ab30edacbcdd"
+  },
+  "text": "hii",
+  "isRead": false,
+  "createdAt": {
+    "$date": "2026-04-07T17:10:02.104Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T17:10:02.104Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d53bfdbb9e408363facb23"
+  },
+  "sender": {
+    "$oid": "69d53bf1bb9e408363facaf0"
+  },
+  "receiver": {
+    "$oid": "69d51aedbb9e408363fac5c4"
+  },
+  "text": "hii",
+  "isRead": true,
+  "createdAt": {
+    "$date": "2026-04-07T17:16:45.447Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T17:16:54.623Z"
+  },
+  "__v": 0,
+  "readAt": {
+    "$date": "2026-04-07T17:16:54.623Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d53c0bbb9e408363facb4c"
+  },
+  "sender": {
+    "$oid": "69d51aedbb9e408363fac5c4"
+  },
+  "receiver": {
+    "$oid": "69d53bf1bb9e408363facaf0"
+  },
+  "text": "hello",
+  "isRead": true,
+  "createdAt": {
+    "$date": "2026-04-07T17:16:59.259Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T17:17:04.709Z"
+  },
+  "__v": 0,
+  "readAt": {
+    "$date": "2026-04-07T17:17:04.709Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d6104400be8c4a5710a0f9"
+  },
+  "sender": {
+    "$oid": "69d51aedbb9e408363fac5c4"
+  },
+  "receiver": {
+    "$oid": "69d6090bf07b9f58d9f5a420"
+  },
+  "text": "hii",
+  "isRead": true,
+  "createdAt": {
+    "$date": "2026-04-08T08:22:28.311Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T08:22:32.845Z"
+  },
+  "__v": 0,
+  "readAt": {
+    "$date": "2026-04-08T08:22:32.845Z"
+  }
+}]

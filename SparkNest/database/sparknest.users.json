@@ -1,0 +1,339 @@
+[{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f6f"
+  },
+  "name": "Sarah Johnson",
+  "email": "sarah@social.com",
+  "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+  "role": "user",
+  "profilePic": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150",
+  "bio": "Photographer 📸",
+  "followers": [
+    {
+      "$oid": "69d480d8d2ca2f5c873b20b2"
+    }
+  ],
+  "following": [],
+  "isPrivate": false,
+  "isOnline": false,
+  "lastSeen": {
+    "$date": "2026-03-30T13:23:14.729Z"
+  },
+  "__v": 1,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.734Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T04:00:26.968Z"
+  },
+  "isBanned": false
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f70"
+  },
+  "name": "Mike Chen",
+  "email": "mike@social.com",
+  "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+  "role": "user",
+  "profilePic": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+  "bio": "Fitness coach 💪",
+  "followers": [],
+  "following": [],
+  "isPrivate": false,
+  "isOnline": false,
+  "lastSeen": {
+    "$date": "2026-03-30T13:23:14.730Z"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.736Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.736Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f71"
+  },
+  "name": "Emma Davis",
+  "email": "emma@social.com",
+  "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+  "role": "user",
+  "profilePic": "https://images.unsplash.com/photo-1549488230-123d827e9899?w=150",
+  "bio": "Digital artist 🎨",
+  "followers": [],
+  "following": [],
+  "isPrivate": false,
+  "isOnline": false,
+  "lastSeen": {
+    "$date": "2026-03-30T13:23:14.731Z"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.737Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.737Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f72"
+  },
+  "name": "David Wilson",
+  "email": "david@social.com",
+  "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+  "role": "user",
+  "profilePic": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+  "bio": "Tech geek 👨‍💻",
+  "followers": [],
+  "following": [],
+  "isPrivate": false,
+  "isOnline": false,
+  "lastSeen": {
+    "$date": "2026-03-30T13:23:14.731Z"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.737Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T13:23:14.737Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ca79426a122c0d9b602f73"
+  },
+  "name": "Admin User",
+  "email": "admin@social.com",
+  "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+  "role": "admin",
+  "profilePic": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
+  "bio": "Platform admin",
+  "followers": [],
+  "following": [],
+  "isPrivate": false,
+  "isOnline": true,
+  "lastSeen": {
+    "$date": "2026-04-01T06:38:25.061Z"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T13:23:14.737Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-01T06:38:25.062Z"
+  },
+  "isBanned": false
+},
+{
+  "_id": {
+    "$oid": "69ca7a176df7ab30edacbd09"
+  },
+  "name": "harsh",
+  "email": "hjkl@ghbjn.xjj",
+  "password": "$2b$10$XGkHJJo2bDfq98Vyf9zQj.0ElnPp0eAoMovP4YpBfoqkOK1h5d5tq",
+  "role": "user",
+  "profilePic": "",
+  "bio": "",
+  "followers": [],
+  "following": [],
+  "isPrivate": false,
+  "isOnline": true,
+  "lastSeen": {
+    "$date": "2026-03-31T15:48:26.495Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-30T13:26:47.334Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-31T15:48:26.496Z"
+  },
+  "__v": 0,
+  "isBanned": false
+},
+{
+  "_id": {
+    "$oid": "69d480d8d2ca2f5c873b20b2"
+  },
+  "name": "chirag",
+  "email": "chirag@123.com",
+  "password": "$2b$10$.ZfJoE7kKM3slW3aA4L6AuWxzym3M.oZ5lEl0fOi429M0WVc69M4G",
+  "role": "user",
+  "profilePic": "",
+  "bio": "",
+  "followers": [],
+  "following": [
+    {
+      "$oid": "69ca79426a122c0d9b602f6f"
+    }
+  ],
+  "isPrivate": false,
+  "isBanned": false,
+  "isOnline": true,
+  "lastSeen": {
+    "$date": "2026-04-07T03:58:22.960Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-07T03:58:16.481Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T04:00:26.964Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69d51aedbb9e408363fac5c4"
+  },
+  "name": "jankee",
+  "email": "jankee@gamil.com",
+  "password": "$2b$10$jStI2LC4rh9axZhHuI45K.a2J357mVukydQJH8eHQN8D6Uady8nKi",
+  "role": "user",
+  "profilePic": "",
+  "bio": "",
+  "followers": [],
+  "following": [],
+  "isPrivate": false,
+  "isBanned": false,
+  "isOnline": true,
+  "lastSeen": {
+    "$date": "2026-04-08T08:22:13.946Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-07T14:55:41.845Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T08:22:13.948Z"
+  },
+  "__v": 0,
+  "preferences": {
+    "notifications": {
+      "boards": true,
+      "comments": true,
+      "follows": true,
+      "likes": true,
+      "messages": true,
+      "reels": true
+    },
+    "privacy": {
+      "allowDirectMessages": true,
+      "privateAccount": false,
+      "profileDiscoverable": true,
+      "showActivity": true
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "69d53bf1bb9e408363facaf0"
+  },
+  "name": "chirag",
+  "email": "cr@gmail.com",
+  "password": "$2b$10$1mormvfF1b7POSJ40OwOEuc8.n6gOgzVN5bWkWECPWB6TU6qmPMvO",
+  "role": "user",
+  "profilePic": "",
+  "bio": "",
+  "followers": [],
+  "following": [],
+  "isPrivate": false,
+  "isBanned": false,
+  "isOnline": false,
+  "lastSeen": {
+    "$date": "2026-04-07T17:16:33.177Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-07T17:16:33.186Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T17:16:33.186Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d608b0f07b9f58d9f5a3e9"
+  },
+  "name": "Admin",
+  "email": "admin@gmail.com",
+  "password": "$2b$10$5.KjZkl3LbHlgIJbOfotgevH7sL6oE9KVDaNIkwXY1T.dF9v2ApY.",
+  "role": "admin",
+  "profilePic": "",
+  "bio": "",
+  "preferences": {
+    "notifications": {
+      "likes": true,
+      "comments": true,
+      "follows": true,
+      "messages": true,
+      "reels": true,
+      "boards": true
+    },
+    "privacy": {
+      "privateAccount": false,
+      "showActivity": true,
+      "allowDirectMessages": true,
+      "profileDiscoverable": true
+    }
+  },
+  "followers": [],
+  "following": [],
+  "isPrivate": false,
+  "isBanned": false,
+  "isOnline": true,
+  "lastSeen": {
+    "$date": "2026-04-08T07:50:39.755Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T07:50:09.040Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T07:50:39.757Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d6090bf07b9f58d9f5a420"
+  },
+  "name": "user",
+  "email": "user@gmail.com",
+  "password": "$2b$10$llUkeu9SQemGWuRh3Nd8qO2y7GfNhx2CwhS4jSDNEif3rwpYxeloe",
+  "role": "user",
+  "profilePic": "",
+  "bio": "",
+  "preferences": {
+    "notifications": {
+      "likes": true,
+      "comments": true,
+      "follows": true,
+      "messages": true,
+      "reels": true,
+      "boards": true
+    },
+    "privacy": {
+      "privateAccount": false,
+      "showActivity": true,
+      "allowDirectMessages": true,
+      "profileDiscoverable": true
+    }
+  },
+  "followers": [],
+  "following": [],
+  "isPrivate": false,
+  "isBanned": false,
+  "isOnline": true,
+  "lastSeen": {
+    "$date": "2026-04-08T08:22:00.557Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T07:51:39.086Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T08:22:00.577Z"
+  },
+  "__v": 0
+}]
