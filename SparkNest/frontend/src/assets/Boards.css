@@ -1,0 +1,146 @@
+:root {
+  --spark-coral: #FF6B6B;
+  --spark-coral-soft: #FFE8E8;
+  --spark-ink: #1A1A2E;
+  --spark-muted: #6B7080;
+  --spark-surface: #FAFAF8;
+  --spark-white: #FFFFFF;
+  --spark-border: #EBEBEB;
+  --spark-radius: 18px;
+  --spark-shadow-hover: 0 12px 40px rgba(26,26,46,0.13);
+}
+
+/* Page */
+.boards-page {
+  font-family: 'DM Sans', sans-serif;
+  padding: 36px 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.boards-page-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.boards-page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--spark-ink);
+}
+
+.boards-page-count {
+  font-size: 13px;
+  color: var(--spark-muted);
+}
+
+/* Button */
+.btn-new-board {
+  background: var(--spark-ink);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn-new-board:hover {
+  opacity: 0.8;
+}
+
+/* Divider */
+.section-divider {
+  width: 36px;
+  height: 3px;
+  background: var(--spark-coral);
+  margin-bottom: 20px;
+}
+
+/* Grid */
+.boards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* Card */
+.board-card {
+  border-radius: var(--spark-radius);
+  overflow: hidden;
+  background: white;
+  border: 1px solid var(--spark-border);
+}
+
+/* Preview */
+.board-preview {
+  height: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+}
+
+.board-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.board-preview-placeholder {
+  background: #eee;
+}
+
+/* Body */
+.board-card-body {
+  padding: 14px;
+}
+
+/* Top */
+.board-card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Name */
+.board-card-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* Badge */
+.board-badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.board-badge.private {
+  background: #F0EDFE;
+  color: #534AB7;
+}
+
+.board-badge.public {
+  background: #E1F5EE;
+  color: #0F6E56;
+}
+
+/* Meta */
+.board-card-meta {
+  font-size: 12px;
+  color: var(--spark-muted);
+}
+
+/* Link */
+.board-view-link {
+  color: var(--spark-coral);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Empty */
+.boards-empty {
+  text-align: center;
+  padding: 60px;
+}

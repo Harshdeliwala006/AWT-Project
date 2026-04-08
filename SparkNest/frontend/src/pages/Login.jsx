@@ -1,0 +1,392 @@
+import { useState, useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";  // ✅ WORKS!
+
+const loginStyles = `
+  :root {
+    --spark-coral: #FF6B6B;
+    --spark-coral-soft: #FFE8E8;
+    --spark-ink: #1A1A2E;
+    --spark-muted: #6B7080;
+    --spark-surface: #FAFAF8;
+    --spark-white: #FFFFFF;
+    --spark-border: #EBEBEB;
+    --spark-radius: 18px;
+  }
+
+  .login-page {
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    background: var(--spark-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .login-wrapper {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  /* Logo */
+  .login-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--spark-ink);
+    letter-spacing: -0.5px;
+    text-decoration: none;
+  }
+  .login-logo span { color: var(--spark-coral); }
+
+  /* Card */
+  .login-card {
+    width: 100%;
+    background: var(--spark-white);
+    border: 1px solid var(--spark-border);
+    border-radius: var(--spark-radius);
+    padding: 40px 36px;
+    box-shadow: 0 4px 32px rgba(26,26,46,0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .login-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--spark-ink);
+    margin: 0 0 6px;
+    letter-spacing: -0.3px;
+  }
+
+  .login-subheading {
+    font-size: 13.5px;
+    color: var(--spark-muted);
+    margin: 0 0 28px;
+    line-height: 1.5;
+  }
+
+  /* Error banner */
+  .login-error {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #FCEBEB;
+    border: 1px solid #F7C1C1;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #A32D2D;
+    margin-bottom: 20px;
+  }
+
+  /* Field group */
+  .login-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 16px;
+  }
+
+  .login-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--spark-ink);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .login-input {
+    width: 100%;
+    background: var(--spark-surface);
+    border: 1px solid var(--spark-border);
+    border-radius: 12px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--spark-ink);
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .login-input:focus {
+    border-color: var(--spark-coral);
+    box-shadow: 0 0 0 3px rgba(255,107,107,0.12);
+  }
+  .login-input::placeholder { color: #BEBDBA; }
+  .login-input.has-error { border-color: #E24B4A; }
+
+  /* Forgot password */
+  .login-forgot {
+    text-align: right;
+    margin-bottom: 24px;
+  }
+  .login-forgot a {
+    font-size: 12.5px;
+    color: var(--spark-muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .login-forgot a:hover { color: var(--spark-coral); }
+
+  /* Submit */
+  .login-submit-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    background: var(--spark-ink);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: opacity 0.15s, transform 0.1s;
+    margin-bottom: 20px;
+  }
+  .login-submit-btn:hover:not(:disabled) { opacity: 0.82; }
+  .login-submit-btn:active:not(:disabled) { transform: scale(0.98); }
+  .login-submit-btn:disabled { opacity: 0.38; cursor: default; }
+
+  /* Divider */
+  .login-or {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .login-or-line { flex: 1; height: 1px; background: var(--spark-border); }
+  .login-or-text { font-size: 12px; color: var(--spark-muted); white-space: nowrap; }
+
+  /* Social buttons */
+  .login-social-row { display: flex; gap: 10px; margin-bottom: 0; }
+
+  .login-social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--spark-border);
+    background: var(--spark-white);
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--spark-ink);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .login-social-btn:hover {
+    background: var(--spark-surface);
+    border-color: #d5d5d5;
+  }
+
+  /* Footer */
+  .login-footer {
+    font-size: 13px;
+    color: var(--spark-muted);
+    text-align: center;
+  }
+  .login-footer a {
+    color: var(--spark-coral);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .login-footer a:hover { text-decoration: underline; }
+`;
+
+function Login() {
+  const { login, loading: authLoading, authError } = useAuth();
+  const navigate = useNavigate();
+
+  const [form, setForm] = useState({ email: "", password: "" });
+  const [error, setError] = useState("");
+  const [showPass, setShowPass] = useState(false);
+  const [submitLoading, setSubmitLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setError("");
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (!form.email.trim() || !form.password.trim()) {
+      setError("Please fill in all fields.");
+      return;
+    }
+
+    try {
+      setSubmitLoading(true);
+      setError("");
+      
+      // Use your backend Auth API
+      const userData = await login(form.email, form.password);
+      
+      if (userData) {
+        // Success - navigate based on role
+        navigate(userData.role === "admin" ? "/admin" : "/");
+      } else {
+        setError("Invalid email or password. Please try again.");
+      }
+    } catch (error) {
+      console.error('Login failed:', error);
+      setError(error.message || "Login failed. Please check your credentials.");
+    } finally {
+      setSubmitLoading(false);
+    }
+  };
+
+  const canSubmit = form.email.trim() && form.password.trim() && !submitLoading && !authLoading;
+
+  // Show auth error from context
+  const displayError = error || authError;
+
+  return (
+    <>
+      <style>{loginStyles}</style>
+
+      <div className="login-page">
+        <div className="login-wrapper">
+
+          {/* Logo */}
+          <Link to="/" className="login-logo">
+            Spark<span>Nest</span>
+          </Link>
+
+          {/* Card */}
+          <div className="login-card">
+            <h1 className="login-heading">Welcome back</h1>
+            <p className="login-subheading">Log in to your SparkNest account.</p>
+
+            {/* Error banner */}
+            {displayError && (
+              <div className="login-error">
+                ⚠️ {displayError}
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit}>
+              {/* Email */}
+              <div className="login-field">
+                <label className="login-label" htmlFor="login-email">
+                  Email
+                </label>
+                <input
+                  id="login-email"
+                  className={`login-input${displayError ? " has-error" : ""}`}
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  value={form.email}
+                  onChange={handleChange}
+                  autoComplete="email"
+                  autoFocus
+                  disabled={submitLoading || authLoading}
+                />
+              </div>
+
+              {/* Password */}
+              <div className="login-field" style={{ position: "relative" }}>
+                <label className="login-label" htmlFor="login-password">
+                  Password
+                </label>
+                <input
+                  id="login-password"
+                  className={`login-input${displayError ? " has-error" : ""}`}
+                  type={showPass ? "text" : "password"}
+                  name="password"
+                  placeholder="••••••••"
+                  value={form.password}
+                  onChange={handleChange}
+                  autoComplete="current-password"
+                  disabled={submitLoading || authLoading}
+                  style={{ paddingRight: 44 }}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPass((v) => !v)}
+                  disabled={submitLoading || authLoading}
+                  style={{
+                    position: "absolute", 
+                    bottom: 10, 
+                    right: 14,
+                    background: "none", 
+                    border: "none", 
+                    cursor: submitLoading || authLoading ? "default" : "pointer",
+                    fontSize: 16, 
+                    color: "var(--spark-muted)", 
+                    padding: 0,
+                  }}
+                  title={showPass ? "Hide password" : "Show password"}
+                  aria-label={showPass ? "Hide password" : "Show password"}
+                >
+                  {showPass ? "🙈" : "👁"}
+                </button>
+              </div>
+
+              {/* Forgot password */}
+              <div className="login-forgot">
+                <Link to="/forgot-password" className="login-forgot-link">
+                  Forgot password?
+                </Link>
+              </div>
+
+              {/* Submit */}
+              <button
+                type="submit"
+                className="login-submit-btn"
+                disabled={!canSubmit}
+              >
+                {submitLoading || authLoading ? (
+                  <>
+                    <span className="login-spinner"></span>
+                    Signing in...
+                  </>
+                ) : (
+                  "Log in"
+                )}
+              </button>
+            </form>
+
+            {/* Divider */}
+            <div className="login-or">
+              <div className="login-or-line" />
+              <span className="login-or-text">or continue with</span>
+              <div className="login-or-line" />
+            </div>
+
+            {/* Social login (future OAuth) */}
+            <div className="login-social-row">
+              <button className="login-social-btn" disabled>
+                <span>↗️</span> Google
+              </button>
+              <button className="login-social-btn" disabled>
+                <span>𝕏</span> Twitter
+              </button>
+            </div>
+          </div>
+
+          {/* Footer */}
+          <p className="login-footer">
+            Don't have an account?{' '}
+            <Link to="/register" className="login-footer-link">Sign up</Link>
+          </p>
+
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Login;

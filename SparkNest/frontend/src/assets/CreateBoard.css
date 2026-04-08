@@ -1,0 +1,148 @@
+:root {
+  --spark-coral: #FF6B6B;
+  --spark-coral-soft: #FFE8E8;
+  --spark-ink: #1A1A2E;
+  --spark-muted: #6B7080;
+  --spark-surface: #FAFAF8;
+  --spark-white: #FFFFFF;
+  --spark-border: #EBEBEB;
+  --spark-radius: 18px;
+}
+
+/* Page */
+.cb-page {
+  min-height: calc(100vh - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--spark-surface);
+  padding: 40px;
+}
+
+/* Card */
+.cb-card {
+  width: 100%;
+  max-width: 460px;
+  background: white;
+  padding: 32px;
+  border-radius: var(--spark-radius);
+  border: 1px solid var(--spark-border);
+}
+
+/* Icon */
+.cb-icon-wrap {
+  width: 50px;
+  height: 50px;
+  background: var(--spark-coral-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* Text */
+.cb-title {
+  font-size: 1.5rem;
+}
+
+.cb-subtitle {
+  font-size: 13px;
+  color: var(--spark-muted);
+  margin-bottom: 20px;
+}
+
+/* Input */
+.cb-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--spark-border);
+}
+
+.cb-char-count {
+  font-size: 11px;
+  text-align: right;
+}
+
+.cb-char-count.over {
+  color: red;
+}
+
+/* Toggle */
+.cb-privacy-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid var(--spark-border);
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.cb-toggle {
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+}
+
+.cb-toggle-thumb {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.2s;
+}
+
+.cb-toggle.on {
+  background: black;
+}
+
+.cb-toggle.on .cb-toggle-thumb {
+  transform: translateX(20px);
+}
+
+/* Buttons */
+.cb-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cb-cancel-btn,
+.cb-submit-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cb-submit-btn {
+  background: black;
+  color: white;
+  border: none;
+}
+
+/* Toast */
+.cb-toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.cb-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}

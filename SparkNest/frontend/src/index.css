@@ -1,0 +1,53 @@
+/* ───────── GRID LAYOUT ───────── */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.02);
+}
+
+.grid-img {
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.grid-item p {
+  margin: 5px 10px;
+  font-size: 14px;
+}
+
+.masonry{
+  column-count:4;
+  column-gap:15px;
+  padding:20px;
+}
+
+.masonry-item{
+  break-inside:avoid;
+  margin-bottom:15px;
+  border:1px solid #ddd;
+  padding:10px;
+  border-radius:10px;
+  background:white;
+}
+
+.post-img{
+  width:100%;
+  border-radius:10px;
+}

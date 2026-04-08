@@ -1,0 +1,133 @@
+:root {
+  --spark-coral: #FF6B6B;
+  --spark-coral-soft: #FFE8E8;
+  --spark-ink: #1A1A2E;
+  --spark-muted: #6B7080;
+  --spark-surface: #FAFAF8;
+  --spark-white: #FFFFFF;
+  --spark-border: #EBEBEB;
+}
+
+/* Layout */
+.chat-root {
+  display: flex;
+  height: calc(100vh - 62px);
+  background: var(--spark-surface);
+}
+
+/* Sidebar */
+.chat-sidebar {
+  width: 280px;
+  background: white;
+  border-right: 1px solid var(--spark-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-sidebar-header {
+  padding: 16px;
+}
+
+.chat-search {
+  width: 100%;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid var(--spark-border);
+}
+
+/* Users */
+.chat-user-list {
+  overflow-y: auto;
+}
+
+.chat-user-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chat-user-item.active {
+  background: var(--spark-coral-soft);
+}
+
+.chat-user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--spark-coral-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main */
+.chat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.chat-header {
+  padding: 12px;
+  border-bottom: 1px solid var(--spark-border);
+  display: flex;
+  gap: 10px;
+}
+
+/* Messages */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.chat-bubble-row {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.chat-bubble-row.mine {
+  justify-content: flex-end;
+}
+
+.chat-bubble {
+  padding: 10px;
+  border-radius: 16px;
+  max-width: 60%;
+}
+
+.chat-bubble.mine {
+  background: black;
+  color: white;
+}
+
+.chat-bubble.theirs {
+  background: white;
+  border: 1px solid var(--spark-border);
+}
+
+/* Input */
+.chat-input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--spark-border);
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid var(--spark-border);
+}
+
+.chat-send-btn {
+  margin-left: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: black;
+  color: white;
+  border: none;
+}

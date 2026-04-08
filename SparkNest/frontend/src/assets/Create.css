@@ -1,0 +1,133 @@
+:root {
+  --spark-coral: #FF6B6B;
+  --spark-coral-soft: #FFE8E8;
+  --spark-ink: #1A1A2E;
+  --spark-muted: #6B7080;
+  --spark-surface: #FAFAF8;
+  --spark-white: #FFFFFF;
+  --spark-border: #EBEBEB;
+  --spark-radius: 18px;
+  --spark-shadow-hover: 0 12px 40px rgba(26,26,46,0.13);
+}
+
+/* Page */
+.create-page {
+  min-height: calc(100vh - 62px);
+  background: var(--spark-surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Header */
+.create-eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--spark-coral);
+}
+
+.create-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.create-subtitle {
+  font-size: 14px;
+  color: var(--spark-muted);
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.create-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 540px;
+}
+
+@media (min-width: 640px) {
+  .create-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 780px;
+  }
+}
+
+/* Card */
+.create-card {
+  padding: 30px 16px;
+  text-align: center;
+  border-radius: var(--spark-radius);
+  background: white;
+  border: 1px solid var(--spark-border);
+  text-decoration: none;
+  color: var(--spark-ink);
+  position: relative;
+  overflow: hidden;
+  transition: 0.25s;
+}
+
+.create-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--card-accent);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.create-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--spark-shadow-hover);
+}
+
+.create-card:hover::before {
+  opacity: 1;
+}
+
+/* Icon */
+.create-card-icon-wrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: var(--icon-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Text */
+.create-card-label {
+  font-weight: 500;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.create-card-desc {
+  font-size: 12px;
+  color: var(--spark-muted);
+  position: relative;
+  z-index: 1;
+}
+
+/* Arrow */
+.create-card-arrow {
+  display: inline-block;
+  margin-top: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.create-card:hover .create-card-arrow {
+  transform: translateX(4px);
+  color: var(--spark-coral);
+}

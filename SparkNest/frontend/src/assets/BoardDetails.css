@@ -1,0 +1,186 @@
+:root {
+  --spark-coral: #FF6B6B;
+  --spark-coral-soft: #FFE8E8;
+  --spark-ink: #1A1A2E;
+  --spark-muted: #6B7080;
+  --spark-surface: #FAFAF8;
+  --spark-white: #FFFFFF;
+  --spark-border: #EBEBEB;
+  --spark-radius: 18px;
+  --spark-shadow-hover: 0 12px 40px rgba(26,26,46,0.13);
+}
+
+/* Page */
+.board-page {
+  font-family: 'DM Sans', sans-serif;
+  padding: 36px 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.board-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--spark-ink);
+}
+
+.board-badge {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 30px;
+}
+
+.board-badge.private {
+  background: #F0EDFE;
+  color: #534AB7;
+}
+
+.board-badge.public {
+  background: #E1F5EE;
+  color: #0F6E56;
+}
+
+.board-post-count {
+  font-size: 13px;
+  color: var(--spark-muted);
+}
+
+/* Back Button */
+.board-back-btn {
+  text-decoration: none;
+  font-size: 13px;
+  padding: 7px 14px;
+  border-radius: 30px;
+  border: 1px solid var(--spark-border);
+  color: var(--spark-muted);
+}
+
+.board-back-btn:hover {
+  background: var(--spark-surface);
+  color: var(--spark-ink);
+}
+
+/* Divider */
+.section-divider {
+  width: 36px;
+  height: 3px;
+  background: var(--spark-coral);
+  margin-bottom: 20px;
+}
+
+/* Empty */
+.board-empty {
+  text-align: center;
+  padding: 60px;
+  border: 1px solid var(--spark-border);
+  border-radius: var(--spark-radius);
+}
+
+/* Masonry */
+.board-masonry {
+  columns: 2;
+  column-gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .board-masonry {
+    columns: 3;
+  }
+}
+
+/* Card */
+.board-post-card {
+  margin-bottom: 14px;
+  border-radius: var(--spark-radius);
+  overflow: hidden;
+  background: white;
+  border: 1px solid var(--spark-border);
+}
+
+.board-post-card img {
+  width: 100%;
+}
+
+/* Body */
+.board-post-body {
+  padding: 10px;
+}
+
+/* Author */
+.post-author-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--spark-coral-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text */
+.post-caption {
+  font-size: 13px;
+}
+
+.post-likes {
+  font-size: 12px;
+  color: var(--spark-muted);
+}
+
+/* Button */
+.btn-remove {
+  margin-top: 10px;
+  border: 1px solid #F7C1C1;
+  background: transparent;
+  padding: 6px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Comments */
+.comments-section {
+  margin-top: 10px;
+  border-top: 1px solid var(--spark-border);
+  padding-top: 8px;
+}
+
+.comment-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 5px;
+}
+
+.comment-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-body {
+  font-size: 12px;
+}
+
+/* Not found */
+.board-not-found {
+  text-align: center;
+  padding: 80px;
+}
